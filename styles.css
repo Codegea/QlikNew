@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFF;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-box h2 {
+    color: #F37321;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #F37321;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #F37321;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+    border-bottom: 2px solid #F37321;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -20px;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    color: #F37321;
+}
+
+.input-group input.has-content~label {
+    top: -20px;
+    font-size: 0.85rem;
+    font-weight: lighter;
+    color: #000;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #F37321;
+    color: #FFF;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #F37321;
+    transform: translateY(-2px);
+}
+
+.imagen-login {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex
+}
